@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Pago | Dulce Tentación</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50 font-sans fade-in">
+  <header class="bg-pink-600 text-white shadow">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <div class="flex items-center space-x-2">
+        <img src="assets/logo.png" alt="Logo Dulce Tentación" class="w-10 h-10 rounded-full border border-white shadow">
+        <h1 class="text-2xl font-bold">Dulce Tentación</h1>
+      </div>
+      <a href="cart.html" class="text-sm underline">Volver al carrito</a>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto p-6 bg-white rounded shadow text-center">
+    <h2 class="text-2xl font-bold text-pink-700 mb-6">Finalizar Compra</h2>
+
+    <p class="mb-4 text-gray-700">Selecciona un método de pago</p>
+    <select class="border p-2 w-full max-w-sm mx-auto mb-6 rounded">
+      <option>WebPay</option>
+      <option>Servipag</option>
+      <option>Transferencia Bancaria</option>
+    </select>
+
+    <button id="payButton" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+      Pagar Ahora
+    </button>
+  </main>
+
+  <footer class="text-center py-4 text-sm text-gray-500 mt-10 border-t">
+    © 2025 Dulce Tentación — Todos los derechos reservados.
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

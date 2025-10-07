@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Catálogo | Dulce Tentación</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50 font-sans fade-in">
+  <header class="bg-pink-600 text-white shadow">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <div class="flex items-center space-x-2">
+        <img src="assets/logo.png" alt="Logo Dulce Tentación" class="w-10 h-10 rounded-full border border-white shadow">
+        <h1 class="text-2xl font-bold">Dulce Tentación</h1>
+      </div>
+      <nav class="flex space-x-4 text-sm items-center">
+        <a href="index.html">Inicio</a>
+        <a href="catalog.html" class="underline">Catálogo</a>
+        <a href="personalize.html">Personalizar</a>
+        <a href="cart.html">Carrito (<span id="cartCount">0</span>)</a>
+        <button id="sessionBtn" class="bg-white text-pink-600 px-3 py-1 rounded hover:bg-pink-100">Iniciar Sesión</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto p-6">
+    <h2 class="text-3xl font-bold text-pink-700 mb-6 text-center">Catálogo de Tortas</h2>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <article class="bg-white rounded shadow p-4 hover:shadow-lg transition">
+        <img src="assets/torta1.jpg" alt="Torta Selva Negra" class="rounded mb-3">
+        <h3 class="font-semibold text-lg">Torta Selva Negra</h3>
+        <p class="text-sm text-gray-500 mb-3">15 porciones — $20.000</p>
+        <button class="bg-pink-600 text-white w-full py-2 rounded add-to-cart" data-name="Torta Selva Negra" data-price="20000">Agregar</button>
+      </article>
+
+      <article class="bg-white rounded shadow p-4 hover:shadow-lg transition">
+        <img src="assets/torta2.jpg" alt="Pastel de Chocolate" class="rounded mb-3">
+        <h3 class="font-semibold text-lg">Pastel de Chocolate</h3>
+        <p class="text-sm text-gray-500 mb-3">Unidad — $6.000</p>
+        <button class="bg-pink-600 text-white w-full py-2 rounded add-to-cart" data-name="Pastel de Chocolate" data-price="6000">Agregar</button>
+      </article>
+
+      <article class="bg-white rounded shadow p-4 hover:shadow-lg transition">
+        <img src="assets/torta3.jpg" alt="Torta de Vainilla" class="rounded mb-3">
+        <h3 class="font-semibold text-lg">Torta de Vainilla</h3>
+        <p class="text-sm text-gray-500 mb-3">10 porciones — $15.000</p>
+        <button class="bg-pink-600 text-white w-full py-2 rounded add-to-cart" data-name="Torta de Vainilla" data-price="15000">Agregar</button>
+      </article>
+    </div>
+  </main>
+
+  <footer class="text-center py-4 text-sm text-gray-500 mt-10 border-t">
+    © 2025 Dulce Tentación — Todos los derechos reservados.
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
